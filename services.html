@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Beauty Parlour</title>
+    <link rel="stylesheet" href="services.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            background-image: url('background-image.jpg'); /* Path to your background image */
+            background-size: cover; /* Ensure the image covers the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repeating */
+            margin: 0;
+            font-family: Times New Roman, serif; /* Set a readable font */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+            padding: 20px 0;
+            color: #fff; /* White text color */
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space between logo and heading */
+            padding: 0 20px;
+        }
+
+        .logo {
+            width: 100px; /* Adjust size as needed */
+            margin-right: 20px; /* Space between logo and heading */
+        }
+
+        header h1 {
+            margin: 0; /* Remove default margin */
+            color: #fff; /* Ensure heading is readable */
+        }
+
+        nav ul {
+            display: flex; /* Align list items horizontally */
+            list-style-type: none; /* Remove default list styling */
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px; /* Space between list items */
+        }
+
+        nav ul li:first-child {
+            margin-left: 0; /* No extra space before the first item */
+        }
+
+        nav a {
+            color: #ff69b4; /* Pink color for links */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Optional: Make text bold */
+        }
+
+        nav a:hover {
+            color: #ff1493; /* Darker pink on hover */
+        }
+
+        /* Services Section */
+        .services {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px; /* Max width for larger screens */
+            border-radius: 10px; /* Rounded corners for aesthetics */
+            text-align: center; /* Center text */
+        }
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+            gap: 20px; /* Space between service items */
+            justify-content: center; /* Center the items */
+        }
+
+        .service {
+            flex: 1 1 calc(33.333% - 20px); /* Responsive width for three items per row */
+            box-sizing: border-box; /* Include padding in width calculation */
+            background: #fff; /* Background color for service boxes */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* Hide overflow */
+            text-align: center; /* Center text */
+            padding: 10px; /* Padding around content */
+        }
+
+        .service-image {
+            max-width: 100%; /* Ensure images fit within their containers */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners for images */
+        }
+
+        .additional-links {
+            margin-top: 20px; /* Space before additional links section */
+            text-align: center; /* Center text */
+        }
+
+        .additional-links a {
+            display: inline-block; /* Make links inline-block for spacing */
+            margin: 10px; /* Space between links */
+            color: #ff69b4; /* Pink color for links */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Optional: Make text bold */
+        }
+
+        .additional-links a:hover {
+            color: #ff1493; /* Darker pink on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(39, 139, 143, 0.8); /* Semi-transparent footer background */
+            color: #fff; /* White text color */
+            margin-top: auto; /* Push the footer to the bottom of the page */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Beauty Parlour Logo" class="logo">
+            <h1>Our Services</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <img src="service1.jpg" alt="Hair Styling" class="service-image">
+                <h3>Hair Styling</h3>
+                <p>Experience the best in hair styling with our expert stylists.</p>
+                <a href="hairstyle.html">Hair Style</a>
+            </div>
+            <div class="service">
+                <img src="service2.jpg" alt="Nailcare" class="service-image">
+                <h3>Nailcare</h3>
+                <p>Pamper your nails with our professional manicure and pedicure services.</p>
+                <a href="nailcare.html">Nailcare</a>
+            </div>
+            <div class="service">
+                <img src="service3.jpg" alt="SkinCare" class="service-image">
+                <h3>SkinCare</h3>
+                <p>Get glowing skin with our personalized skincare treatments.</p>
+                <a href="skincare.html">Skincare</a>
+            </div>
+            <div class="service">
+                <img src="mehandi.jpg" alt="Mehandi" class="service-image">
+                <h3>Mehandi</h3>
+                <p>Beautiful and intricate mehandi designs for any occasion.</p>
+                <a href="mehandi.html">Mehandi</a>
+            </div>
+            <div class="service">
+                <img src="bridal-makeup.jpg" alt="Bridal Makeup" class="service-image">
+                <h3>Bridal Makeup</h3>
+                <p>Expert bridal makeup to make your special day unforgettable.</p>
+                <a href="bridalmakeup.html">Bridal Makeup</a>
+            </div>
+            <div class="service">
+                <img src="pedicure.jpg" alt="Pedicure" class="service-image">
+                <h3>Pedicure</h3>
+                <p>Experience the best pedicure with our expert stylists.</p>
+                <a href="pedicure.html">Pedicure</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Beauty Parlour. All rights reserved.</p>
+    </footer>
+</body>
+</html>

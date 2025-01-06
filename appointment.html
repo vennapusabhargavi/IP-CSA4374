@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Beauty Parlour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><img src="logo.png" alt="Beauty Parlour Logo" class="logo"></a>
+            <h1>Beauty Parlour</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="appointment" class="appointment">
+        <div class="appointment-content">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm" class="appointment-form" action="appointment.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="service">Service Type:</label>
+                <select id="service" name="service" required>
+                    <option value="hairstyling">Hairstyling</option>
+                    <option value="nailcare">Nailcare</option>
+                    <option value="skincare">Skincare</option>
+                    <option value="mehendi">Mehendi</option>
+                    <option value="bridal makeup">Bridal Makeup</option>
+                    <option value="pedicure">Pedicure</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Beauty Parlour. All rights reserved.</p>
+    </footer>
+</body>
+</html>

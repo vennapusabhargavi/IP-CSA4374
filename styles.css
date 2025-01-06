@@ -1,0 +1,156 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-image: url('image.jpg'); /* Update this path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff1493;
+}
+
+/* Appointment Section */
+.appointment {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.appointment-content {
+    background: rgba(255, 255, 255, 0.9); /* Slightly white background with transparency */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    width: 100%;
+    max-width: 600px; /* Limit the width */
+}
+
+.appointment h2 {
+    margin-bottom: 20px;
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add space between form elements */
+}
+
+.appointment-form label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels for clarity */
+    text-align: left; /* Align label text to the left */
+}
+
+.appointment-form input,
+.appointment-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em; /* Consistent font size */
+}
+
+.appointment-form textarea {
+    resize: vertical; /* Allow vertical resize only */
+}
+
+.appointment-form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.appointment-form button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(39, 139, 143, 0.8);
+    color: #fff;
+    margin-top: auto;
+    z-index: 1;
+}

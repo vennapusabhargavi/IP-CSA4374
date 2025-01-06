@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Confirmation | Beauty Parlour</title>
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><img src="logo.png" alt="Beauty Parlour Logo" class="logo"></a>
+            <h1>Beauty Parlour</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="confirmation" class="confirmation">
+        <div class="confirmation-content">
+            <h2>Appointment Confirmation</h2>
+            <p><strong>Full Name:</strong> <span id="fullName"></span></p>
+            <p><strong>Email Address:</strong> <span id="emailAddress"></span></p>
+            <p><strong>Phone Number:</strong> <span id="phoneNumber"></span></p>
+            <p><strong>Service Type:</strong> <span id="Service Type"></span></p>
+            <p><strong>Preferred Date:</strong> <span id="preferredDate"></span></p>
+            <p><strong>Preferred Time:</strong> <span id="preferredTime"></span></p>
+            <p><strong>Additional Notes:</strong> <span id="additionalNotes"></span></p>
+            <a href="index.html" class="cta-button">Back to Home</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Beauty Parlour. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        document.getElementById('fullName').textContent = getParameterByName('name');
+        document.getElementById('emailAddress').textContent = getParameterByName('email');
+        document.getElementById('phoneNumber').textContent = getParameterByName('phone');
+        document.getElementById('Service Type').textContent = getParameterByName('service');
+        document.getElementById('preferredDate').textContent = getParameterByName('date');
+        document.getElementById('preferredTime').textContent = getParameterByName('time');
+        document.getElementById('additionalNotes').textContent = getParameterByName('notes');
+    </script>
+</body>
+</html>

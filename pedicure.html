@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedicure Services</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #9b8c77;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Container to center content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Back button styling */
+        .back-button {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.5rem 1rem;
+            background-color: #9b8c77; /* Matches header background color */
+            color: #fff; /* White text color */
+            text-decoration: none; /* Removes underline */
+            border-radius: 5px; /* Rounded corners */
+            font-weight: bold; /* Bold text */
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #8a7a68; /* Darker shade on hover */
+        }
+
+        /* Styling for the pedicure section and cards */
+        .pedicure-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .pedicure-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .pedicure-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #9b8c77;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Contact form styling */
+        .contact-form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            max-width: 600px;
+            margin: 1rem auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #9b8c77;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #8a7a68;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pedicure Services</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Back Button -->
+        <a href="services.html" class="back-button">Back to Services</a>
+        
+        <section class="pedicure-gallery">
+            <div class="pedicure-card">
+                <img src="pedicure1.jpg" alt="Classic Pedicure">
+                <h2>Classic Pedicure</h2>
+                <p>A traditional pedicure that includes nail trimming, shaping, and polish.</p>
+            </div>
+            <div class="pedicure-card">
+                <img src="pedicure2.jpg" alt="Spa Pedicure">
+                <h2>Spa Pedicure</h2>
+                <p>A luxurious pedicure experience with exfoliation, massage, and moisturizing.</p>
+            </div>
+            <div class="pedicure-card">
+                <img src="pedicure3.jpg" alt="Gel Pedicure">
+                <h2>Gel Pedicure</h2>
+                <p>Long-lasting gel polish that provides a durable and shiny finish.</p>
+            </div>
+            <div class="pedicure-card">
+                <img src="pedicure4.jpg" alt="French Pedicure">
+                <h2>French Pedicure</h2>
+                <p>Classic and elegant with a white tip and a natural base.</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Pedicure Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

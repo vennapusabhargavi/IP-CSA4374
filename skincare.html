@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care Services</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Container to center content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Back button styling */
+        .back-button {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.5rem 1rem;
+            background-color: #222; /* Matches header background color */
+            color: #fff; /* White text color */
+            text-decoration: none; /* Removes underline */
+            border-radius: 5px; /* Rounded corners */
+            font-weight: bold; /* Bold text */
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #444; /* Darker shade on hover */
+        }
+
+        /* Styling for the skin care section and cards */
+        .skin-care {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skin-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .skin-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Contact form styling */
+        .contact-form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            max-width: 600px;
+            margin: 1rem auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skin Care Services</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Back Button -->
+        <a href="services.html" class="back-button">Back to Services</a>
+        
+        <section class="skin-care">
+            <div class="skin-card">
+                <img src="skin1.jpg" alt="Facial Cleansing">
+                <h2>Facial Cleansing</h2>
+                <p>A deep cleanse to remove impurities and rejuvenate your skin.</p>
+            </div>
+            <div class="skin-card">
+                <img src="skin2.jpg" alt="Moisturizing Treatment">
+                <h2>Moisturizing Treatment</h2>
+                <p>Hydrates and nourishes your skin for a soft and supple feel.</p>
+            </div>
+            <div class="skin-card">
+                <img src="skin3.jpg" alt="Anti-Aging Facial">
+                <h2>Anti-Aging Facial</h2>
+                <p>Reduces fine lines and wrinkles to restore youthful radiance.</p>
+            </div>
+            <div class="skin-card">
+                <img src="skin4.jpg" alt="Exfoliation">
+                <h2>Exfoliation</h2>
+                <p>Removes dead skin cells to reveal a brighter and smoother complexion.</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Skin Care Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
